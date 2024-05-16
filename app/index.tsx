@@ -1,11 +1,5 @@
-import {
-  Image,
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  Text,
-  View,
-} from "react-native";
+import { Image, SafeAreaView, ScrollView, Text, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { Link, router } from "expo-router";
 import { images } from "../constants";
@@ -53,7 +47,7 @@ const index = () => {
         </View>
       </ScrollView>
 
-      <StatusBar backgroundColor="#161622" barStyle="light-content" />
+      <StatusBar backgroundColor="#161622" style="light" />
     </SafeAreaView>
   );
 };
